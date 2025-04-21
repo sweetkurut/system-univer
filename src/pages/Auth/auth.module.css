@@ -1,0 +1,85 @@
+/* .banner {
+
+} */
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+    background-image: url("../../assets/image/banner.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+.form {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+.formGroup {
+    margin-bottom: 1.5rem;
+}
+
+.formGrouRemember {
+    display: flex;
+    align-items: center;
+}
+
+.label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.input:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+
+.rememberMe {
+    display: flex;
+    align-items: center;
+}
+
+.rememberMeInput {
+    margin-right: 0.5rem;
+}
+
+.submitButton {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    font-family: "Montserrat";
+}
+
+.submitButton:hover {
+    background-color: #0056b3;
+}
