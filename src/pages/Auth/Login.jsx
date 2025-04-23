@@ -30,13 +30,11 @@ const Login = () => {
     return (
         <div className={s.banner}>
             <div className={s.wrapper}>
+                <div className={s.bg}></div>
                 <form className={s.form} onSubmit={handleSubmit}>
                     <h1 className={s.title}>Авторизация</h1>
 
                     <div className={s.formGroup}>
-                        <label htmlFor="login" className={s.label}>
-                            Логин
-                        </label>
                         <input
                             type="text"
                             id="login"
@@ -45,13 +43,11 @@ const Login = () => {
                             onChange={handleChange}
                             className={s.input}
                             required
+                            placeholder="Логин"
                         />
                     </div>
 
                     <div className={s.formGroup}>
-                        <label htmlFor="password" className={s.label}>
-                            Пароль
-                        </label>
                         <input
                             type="password"
                             id="password"
@@ -60,19 +56,14 @@ const Login = () => {
                             onChange={handleChange}
                             className={s.input}
                             required
+                            placeholder="Пароль"
                         />
                     </div>
 
-                    <div className={`${s.formGroup} ${s.rememberMe}`}>
-                        <input
-                            type="checkbox"
-                            id="rememberMe"
-                            name="rememberMe"
-                            checked={formData.rememberMe}
-                            onChange={handleChange}
-                            className={s.rememberMeInput}
-                        />
-                        <label htmlFor="rememberMe" className={s.label}>
+                    <div className={`${s.formGroup} ${s.rememberMe} flex items-center gap-5`}>
+                        <label className={s.customCheckbox}>
+                            <input type="checkbox" className={s.rememberMeInput} />
+                            <span className={s.checkboxDisplay}></span>
                             Запомнить меня
                         </label>
                     </div>
