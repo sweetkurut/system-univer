@@ -11,3 +11,28 @@
 body {
     font-family: "Montserrat", sans-serif;
 }
+
+
+.flex {
+    display: flex;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.gap-5 {
+    gap: 5px;
+}
+
+.text-black {
+    color: #000;
+}
+
+.text-sm {
+    font-size: 14px;
+}
