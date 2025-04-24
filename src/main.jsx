@@ -13,7 +13,7 @@ createRoot(document.getElementById("root")).render(
             {/* <App /> */}
             <Routes>
                 <Route path="/" element={<Login />} />
-                <Route path="/calendar" element={<Deals />} />
+                {/* <Route path="/calendar" element={<Deals />} /> */}
                 <Route path="/report" element={<Report />} />
                 <Route path="/board" element={<BoardPage />} />
             </Routes>

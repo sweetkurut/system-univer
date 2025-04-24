@@ -1,15 +1,25 @@
+import { FaArrowLeft } from "react-icons/fa";
 import s from "./report.module.css";
+import { useNavigate } from "react-router-dom";
 
 const subjects = ["Мат.Анализ", "Русский язык", "Английский язык", "История Казахстана", "Социология", "Политология"];
 
 const dates = ["10.05.2025", "10.05.2025", "10.05.2025", "10.05.2025"];
 
 const Report = () => {
+    const nav = useNavigate();
+    const handleNavigate = () => {
+        nav("/board");
+    };
+
     return (
         <div className={s.wrapper}>
             <div className={s.container}>
                 <div className={s.tabel_title}>
-                    <h2 className={s.title}>Табель студента</h2>
+                    <div className={s.t_icon}>
+                        <FaArrowLeft className={s.arrow} onClick={handleNavigate} />
+                        <h2 className={s.title}>Табель студента</h2>
+                    </div>
                     <div className={s.periodRow}>
                         <span className={s.periodLabel}>Отчетный период:</span>
                         <input type="date" defaultValue="2025-01-25" className={s.input} />
@@ -23,6 +33,7 @@ const Report = () => {
                         </div>
                     </div>
                 </div>
+
                 <div className={s.pageWrapper}>
                     <div className={s.card}>
                         <div className={s.header}></div>
